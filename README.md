@@ -90,4 +90,19 @@ We love receiving feedback! We're always looking to improve our challenges and o
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
+ Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+
 **Have fun building!** 🚀

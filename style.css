@@ -15,6 +15,9 @@
     font-family: var(--font);
 }
 
+body {
+    background-color: var(--Almost-White);
+}
 .company-logo {
     display: flex;
 }
@@ -36,6 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .navigation-child {
@@ -86,12 +90,12 @@ header {
 .box__left {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-content: end;
     justify-content: space-between;
 }
 
 .box-left_cont {
-    padding-top: 10rem;
+    padding-top: 8rem;
 }
 
 .box-left_cont h1 {
@@ -101,7 +105,7 @@ header {
 }
 
 .box__left p {
-    margin-block: 2.5rem;
+    margin-block: 3rem;
     line-height: 1.5em;
     padding-right: 3rem;
     color: var(--Medium-Gray);
@@ -130,7 +134,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
+    justify-content: left;
     justify-items: center;
     align-items: end;
 }
@@ -140,5 +144,66 @@ header {
     align-items: center;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.drop {
+    position: relative;
+}
+
+.drop::after {
+    content: url(images/icon-arrow-down.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.drop a:focus + .sub-menu,
+.drop a:focus + .sub-menu-2 {
+    background-color: white;
+    padding-block: .3rem;
+    margin-top: 1rem;
+    display: block;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.sub-menu {
+    display: none;
+}
+/*-------sub menu-icons----------*/
+.to-do a::before {
+    content: url(images/icon-todo.svg);
+    margin-right: .5rem;
+    width: .5em;
+}
+.cal a::before {
+    content: url(images/icon-calendar.svg);
+    margin-right: .5rem;
+    width: .5em;
+}
+.rem a::before {
+    content: url(images/icon-reminders.svg);
+    margin-right: .5rem;
+    width: .5em;
+}
+.plan a::before {
+    content: url(images/icon-planning.svg);
+    margin-right: .5rem;
+    width: .5em;
+}
+
+.drop a:focus + .sub-menu-2 {
+    left: 19%;
+}
+
+.sub-menu > li  {
+    padding-block: .5rem;
+    font-size: .8em;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin-top: 10px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }

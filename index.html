@@ -16,9 +16,14 @@
 
   <div class="biggest-container"><!--biggest container-->
       <header><!--header container-->
-        <nav class="navigation"><!--Navigation-->
+      <div class="menu-logo-wrap">
+        <div class="logo-wrap"><!--logo-->
+           <img src="images/logo.svg" alt="brand logo">
+        </div><!--logo-->
+        <!--Navigation-->
+        <input type="checkbox" name="checkbox" class="checkboxy" id="checkboxy">
+        <nav class="navigation">
           <ul class="navigation-child logo-menu">
-            <li class="logo"><img src="images/logo.svg" alt="brand logo"></li>
             <li class="drop feature"><a href="#">Feature</a>
               <!--dropdown menu-->
               <ul class="sub-menu">
@@ -45,12 +50,18 @@
             <li><a href="#">Login</a></li>
             <li class="reg-cta"><a href="#">Register</a></li>
           </ul>
-        </nav><!--navigation ends-->
+        </nav>
+        <!--navigation ends-->
+        <label for="checkboxy" id="nav-toggle-label" class="nav-toggle-icon">
+          <span><img src="images/icon-menu.svg" alt="icon-menu "></span>
+        </label>
+        </div>
+        
 
         <div class="box"><!--box-->
           <div class="box__left">
             <div class="box-left_cont">
-              <h1>Make<br> remote work</h1>
+              <h1>Make remote work</h1>
               <p>Get your team in sync, no matter your location. Streamline processes, 
               create team rituals, and watch productivity soar.
               </p>

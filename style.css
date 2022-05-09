@@ -244,10 +244,10 @@ header {
         position: absolute;
         background-color: white;
         padding-top: 5rem;
-        width: 60%;
+        width: 65%;
         height: 1050px;
         top: 0;
-        right: 0;
+        right: -2%;
         transition: .55ms ease-in;
     }
 
@@ -331,7 +331,7 @@ header {
     .drop a:focus + .sub-menu,
     .drop a:focus + .sub-menu-2 {
         padding-block: unset;
-        text-align: center;
+        text-align: start  ;
         position: unset;
         left: unset;
         border-radius: unset;

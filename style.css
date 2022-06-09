@@ -241,7 +241,7 @@ header {
     }
 
     .navigation {
-        opacity: 0;
+        /* opacity: 0; */
         position: absolute;
         background-color: white;
         padding-top: 5rem;
